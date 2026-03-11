@@ -1,0 +1,519 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Experience - Nuraj Rimal</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            /* ══════════════════════════════════════════
+               MODERN DUAL TIMELINE - UPDATED
+            ══════════════════════════════════════════ */
+
+            .tl-section {
+                max-width: 900px;
+                margin: 2rem auto 4rem auto;
+                padding: 0 1rem;
+            }
+
+            .tl-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0 4rem;
+            }
+
+            .tl-col-title {
+                text-align: center;
+                font-size: 0.75rem;
+                letter-spacing: 0.15em;
+                text-transform: uppercase;
+                color: #717981;
+                margin-bottom: 1.5rem;
+                padding-bottom: 0.8rem;
+                border-bottom: 2px solid #eeeeee;
+            }
+
+            .tl-body {
+                position: relative;
+                padding-top: 1rem;
+            }
+
+            /* THE SPINE */
+            .tl-body::before {
+                content: '';
+                position: absolute;
+                left: 45px;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background: #e0e0e0;
+                z-index: 0;
+            }
+
+            .tl-body::after {
+                content: '';
+                position: absolute;
+                left: 45px;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background: #18bfef;
+                z-index: 1;
+                transform: scaleY(0);
+                transform-origin: top;
+                transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .tl-body.tl-spine-in::after {
+                transform: scaleY(1);
+            }
+
+            .tl-year-row {
+                display: flex;
+                align-items: flex-start;
+                position: relative;
+                z-index: 2;
+                margin-bottom: 0.5rem;
+                opacity: 0;
+                transform: translateY(15px);
+                transition: all 0.5s ease;
+            }
+
+            .tl-year-row.tl-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .tl-year {
+                width: 45px;
+                flex-shrink: 0;
+                font-size: 0.65rem;
+                font-weight: 800;
+                color: #a1a9b1;
+                padding-top: 0.4rem;
+                text-align: right;
+                padding-right: 10px;
+            }
+
+            .tl-dot-col {
+                width: 20px;
+                display: flex;
+                justify-content: center;
+                padding-top: 0.45rem;
+                margin-right: 15px;
+            }
+
+            .tl-dot {
+                width: 8px;
+                height: 8px;
+                background: #fff;
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                transition: all 0.3s ease;
+            }
+
+            .has-card .tl-dot {
+                width: 11px;
+                height: 11px;
+                background: #18bfef;
+                border-color: #18bfef;
+                box-shadow: 0 0 0 3px rgba(24, 191, 239, 0.15);
+            }
+
+            .tl-card-wrap {
+                flex: 1;
+                min-height: 45px;
+            }
+
+            .tl-card {
+                background: #ffffff;
+                border: 1px solid #edeff2;
+                border-radius: 4px;
+                padding: 0.8rem;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+                transition: all 0.3s ease;
+                margin-bottom: 0.5rem;
+                position: relative;
+                z-index: 5;
+            }
+
+            /* SPANNING EFFECT */
+            .tl-card.span-2 {
+                margin-bottom: -45px; /* Pulls the next row's space into the card */
+                padding-bottom: 2rem;
+            }
+
+            .tl-card:hover {
+                transform: translateX(5px);
+                border-color: #18bfef;
+            }
+
+            .tl-role {
+                font-size: 0.85rem;
+                font-weight: 900;
+                color: #212931;
+                margin-bottom: 0.1rem;
+                line-height: 1.2;
+            }
+
+            .tl-org {
+                font-size: 0.75rem;
+                color: #18bfef;
+                font-weight: 700;
+            }
+
+            .tl-loc {
+                font-size: 0.65rem;
+                color: #9199a1;
+                font-style: italic;
+            }
+
+            @media screen and (max-width: 768px) {
+                .tl-grid { grid-template-columns: 1fr; gap: 3rem; }
+                .tl-card.span-2 { margin-bottom: 0.5rem; } /* Reset for mobile stack */
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <div id="wrapper">
+
+            <header id="header">
+                <a href="index.html" class="logo">Nuraj Rimal</a>
+            </header>
+
+            <nav id="nav">
+                <ul class="links">
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="generic.html">Certifications</a></li>
+                    <li class="active"><a href="elements.html">Experiences</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/nuraj-rimal/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/nurajrimal" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </nav>
+
+            <div id="main">
+                <section class="post">
+                    <header class="major">
+                        <h1>Career &<br />Education</h1>
+                        <p>A chronological journey from present to past.</p>
+                    </header>
+
+                    <div class="tl-section">
+                        <div class="tl-grid">
+
+                            <div class="tl-col">
+                                <div class="tl-col-title">🎓 Academic</div>
+                                <div class="tl-body">
+                                    
+                                    <div class="tl-year-row has-card">
+                                        <div class="tl-year">2025</div>
+                                        <div class="tl-dot-col"><div class="tl-dot"></div></div>
+                                        <div class="tl-card-wrap">
+                                            <div class="tl-card">
+                                                <div class="tl-role">Master of Science</div>
+                                                <div class="tl-org">Computer Science</div>
+                                                <div class="tl-loc">SIUE, Edwardsville, IL</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tl-year-row"><div class="tl-year">2024</div><div class="tl-dot-col"><div class="tl-dot"></div></div><div class="tl-card-wrap"></div></div>
+
+                                    <div class="tl-year-row has-card">
+                                        <div class="tl-year">2023</div>
+                                        <div class="tl-dot-col"><div class="tl-dot"></div></div>
+                                        <div class="tl-card-wrap">
+                                            <div class="tl-card">
+                                                <div class="tl-role">Degree Completion</div>
+                                                <div class="tl-org">Bachelors in Computer Science</div>
+                                                <div class="tl-loc">Kathmandu, Nepal</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tl-year-row"><div class="tl-year">2022</div><div class="tl-dot-col"><div class="tl-dot"></div></div><div class="tl-card-wrap"></div></div>
+                                    <div class="tl-year-row"><div class="tl-year">2021</div><div class="tl-dot-col"><div class="tl-dot"></div></div><div class="tl-card-wrap"></div></div>
+                                    <div class="tl-year-row"><div class="tl-year">2020</div><div class="tl-dot-col"><div class="tl-dot"></div></div><div class="tl-card-wrap"></div></div>
+
+                                    <div class="tl-year-row has-card">
+                                        <div class="tl-year">2019</div>
+                                        <div class="tl-dot-col"><div class="tl-dot"></div></div>
+                                        <div class="tl-card-wrap">
+                                            <div class="tl-card">
+                                                <div class="tl-role">Bachelors in Computer Science</div>
+                                                <div class="tl-org">Degree Commencement</div>
+                                                <div class="tl-loc">Tribhuvan University, Nepal</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tl-col">
+                                <div class="tl-col-title">💼 Professional</div>
+                                <div class="tl-body">
+                                    
+                                    <div class="tl-year-row has-card">
+                                        <div class="tl-year">2025</div>
+                                        <div class="tl-dot-col"><div class="tl-dot"></div></div>
+                                        <div class="tl-card-wrap">
+                                            <div class="tl-card">
+                                                <div class="tl-role">Graduate Assistant</div>
+                                                <div class="tl-org">Teaching & Research</div>
+                                                <div class="tl-loc">SIUE, Edwardsville, IL</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tl-year-row has-card">
+                                        <div class="tl-year">2023</div>
+                                        <div class="tl-dot-col"><div class="tl-dot"></div></div>
+                                        <div class="tl-card-wrap">
+                                            <div class="tl-card span-2">
+                                                <div class="tl-role">Data Analyst</div>
+                                                <div class="tl-org">SecurityPal, Inc.</div>
+                                                <div class="tl-loc">2023 - 2025 | Kathmandu, Nepal</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tl-year-row"><div class="tl-year">2022</div><div class="tl-dot-col"><div class="tl-dot"></div></div><div class="tl-card-wrap"></div></div>
+
+                                    <div class="tl-year-row has-card">
+                                        <div class="tl-year">2021</div>
+                                        <div class="tl-dot-col"><div class="tl-dot"></div></div>
+                                        <div class="tl-card-wrap">
+                                            <div class="tl-card span-2">
+                                                <div class="tl-role">Graphic Designer Lead</div>
+                                                <div class="tl-org">Deewalk Group</div>
+                                                <div class="tl-loc">2021 - 2023 | Kathmandu, Nepal</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tl-year-row"><div class="tl-year">2020</div><div class="tl-dot-col"><div class="tl-dot"></div></div><div class="tl-card-wrap"></div></div>
+                                    <div class="tl-year-row"><div class="tl-year">2019</div><div class="tl-dot-col"><div class="tl-dot"></div></div><div class="tl-card-wrap"></div></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr />
+                </section>
+            </div>
+
+			<section class="reflection-wrapper">
+				<div class="reflection-container">
+					<header class="major" style="margin-bottom: 2.5rem; text-align: center;">
+						<h2 style="color: #212931;">🌟 Reflecting on an Unforgettable Journey</h2>
+					</header>
+			
+					<div class="blog-layout">
+						<div class="blog-card">
+							<div class="blog-content">
+								<p>
+									As I reminisce on the incredible memories and experiences from my time in <strong>Nazing, Solukhumbhu</strong>, I am filled with profound gratitude. This journey, made possible through the fellowship program with <strong>Deerwalk Institute of Technology</strong> and <strong>EduTech Nepal</strong>, holds a special place in my heart as a cherished memory of making a difference in the lives of others.
+								</p>
+								<p>
+									Nazing, a remote village nestled amidst the breathtaking beauty of Solukhumbhu, became my home away from home. I had the privilege of teaching and mentoring students in a government school where access to proper tutoring was scarce. Every day came with new challenges; collaborating with local educators, I crafted engaging lessons and innovative teaching methods tailored to the needs of the students.
+								</p>
+								<blockquote style="border-left: 4px solid #18bfef; background: rgba(24, 191, 239, 0.05); padding: 1rem; margin: 1.5rem 0;">
+									"Education is the most powerful weapon which you can use to change the world." <br/>— <strong>Nelson Mandela</strong>
+								</blockquote>
+								<p>
+									The impact of this work extended far beyond the classroom walls. It was evident in the smiles of the students and the palpable atmosphere of hope. I am immensely grateful for the opportunity to be a part of something greater than myself, reaffirming my belief in the transformative power of accessible education.
+								</p>
+							</div>
+						</div>
+			
+						<div class="blog-photos">
+							<div class="slideshow-frame">
+								<div class="slideshow-container">
+									<img src="images/1711899975031.jpeg" class="mySlides fade" alt="Nazing Journey 1">
+									<img src="images/1711899976277.jpeg" class="mySlides fade" alt="Nazing Journey 2">
+									<img src="images/1711899976486.jpeg" class="mySlides fade" alt="Nazing Journey 3">
+								</div>
+								<div class="photo-caption">Nazing, Solukhumbhu, Nepal - Fellowship</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<style>
+				.reflection-wrapper {
+					background-color: #f8f9fa; /* Light grey background to separate from timeline */
+					padding: 4rem 2rem;
+					margin: 2rem 0;
+					border-radius: 8px;
+				}
+			
+				.reflection-container {
+					max-width: 1100px;
+					margin: 0 auto;
+				}
+				
+				.blog-layout {
+					display: flex;
+					gap: 4rem;
+					align-items: stretch; /* Ensures both sides feel balanced */
+				}
+			
+				/* THE TEXT CARD */
+				.blog-card {
+					flex: 1.2;
+					background: #ffffff; /* Solid white background for the text */
+					padding: 2.5rem;
+					border-radius: 12px;
+					box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+					border: 1px solid #edeff2;
+				}
+			
+				.blog-content p {
+					color: #4a5568 !important; /* Dark grey text for readability */
+					line-height: 1.8;
+					margin-bottom: 1.5rem;
+					font-size: 0.95rem;
+				}
+			
+				.blog-content strong {
+					color: #18bfef;
+				}
+			
+				/* THE PHOTO FRAME */
+				.blog-photos {
+					flex: 0.8;
+					display: flex;
+					flex-direction: column;
+				}
+			
+				.slideshow-frame {
+					background: #ffffff;
+					padding: 10px;
+					border-radius: 12px;
+					box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+				}
+			
+				.slideshow-container {
+					position: relative;
+					width: 100%;
+					height: 450px;
+					overflow: hidden;
+					border-radius: 6px;
+				}
+			
+				.mySlides {
+					display: none;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			
+				.photo-caption {
+					text-align: center;
+					font-size: 0.7rem;
+					text-transform: uppercase;
+					letter-spacing: 0.1em;
+					padding-top: 15px;
+					color: #9199a1;
+				}
+			
+				/* Animation */
+				.fade {
+					animation-name: fade;
+					animation-duration: 2s;
+				}
+			
+				@keyframes fade {
+					from {opacity: .4} 
+					to {opacity: 1}
+				}
+			
+				@media screen and (max-width: 980px) {
+					.blog-layout { flex-direction: column; }
+					.blog-card { padding: 1.5rem; }
+					.slideshow-container { height: 350px; }
+					.blog-photos { order: -1; margin-bottom: 2rem; }
+				}
+			</style>
+			
+			<script>
+				let slideIndex = 0;
+				showSlides();
+			
+				function showSlides() {
+					let i;
+					let slides = document.getElementsByClassName("mySlides");
+					if (slides.length === 0) return;
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+					}
+					slideIndex++;
+					if (slideIndex > slides.length) {slideIndex = 1}    
+					slides[slideIndex-1].style.display = "block";  
+					setTimeout(showSlides, 4500); 
+				}
+			</script>
+
+            <footer id="footer">
+                <section class="split contact" style="width: 100%;">
+                    <section class="alt">
+                        <h3>Location</h3>
+                        <p>Maryville, Illinois</p>
+                    </section>
+                    <section>
+                        <h3>Email</h3>
+                        <p><a href="mailto:nurajrimal22@gmail.com">nurajrimal22@gmail.com</a></p>
+                    </section>
+                    <section>
+                        <h3>Social</h3>
+                        <ul class="icons alt">
+                            <li><a href="https://www.linkedin.com/in/nuraj-rimal/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://github.com/nurajrimal" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </section>
+                </section>
+            </footer>
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            (function () {
+                var bodies = document.querySelectorAll('.tl-body');
+                var spineObs = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) {
+                        if (e.isIntersecting) {
+                            e.target.classList.add('tl-spine-in');
+                            spineObs.unobserve(e.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                bodies.forEach(function (b) { spineObs.observe(b); });
+
+                var rows = document.querySelectorAll('.tl-year-row');
+                var rowObs = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) {
+                        if (e.isIntersecting) {
+                            e.target.classList.add('tl-in');
+                            rowObs.unobserve(e.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                rows.forEach(function (row, i) {
+                    row.style.transitionDelay = (i * 0.08) + 's';
+                    rowObs.observe(row);
+                });
+            })();
+        </script>
+    </body>
+</html>
